@@ -1,4 +1,4 @@
-module net.montimur.tacocloud {
+open module net.montimur.tacocloud {
 
     requires java.xml;
     requires java.sql;
@@ -10,7 +10,4 @@ module net.montimur.tacocloud {
     requires spring.beans;
     requires spring.web;
     requires spring.webmvc;
-
-    opens net.montimur.tacocloud to spring.boot.devtools, spring.core, spring.beans, spring.context;
-    opens net.montimur.tacocloud.controller to spring.beans, spring.context;
 }
